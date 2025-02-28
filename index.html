@@ -1,120 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1 ">
-        <title>Sean's Page</title>
 
-        <link rel="stylesheet" href="style.css">
-        <script defer src="app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <title>Sean's Page</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
 
-    <body>
-        <!-- <header id="pg-head">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <header id="pg-head">
             Want this to be hidden until scroll up
              then we can link them to each section, could also go to the side
     
         </header> -->
 
-        <section id="intro">
-            <div class="container">
-                <img id="intro-img" height="1045" width="1567" src="imgs/Kyoto_shrine.jpg">
-                <div class="intro-text">
-                    <h1 class="montserrat-regular page-title">
-                        Sean Wallace
-                    </h1>
-                    <div class="intro-info">
-                        <div class="contact-info"> 
-                            phone number, email
-                        </div>
-                        <a>Education</a> <br/>
-                        <a>Projects</a> <br/>
-                        <a>Work</a>
+    <section id="intro">
+        <div class="container">
+            <img id="intro-img" height="1045" width="1567" src="imgs/Kyoto_shrine.jpg">
+            <div class="intro-text">
+                <h1 class="montserrat-regular page-title">
+                    Sean Wallace
+                </h1>
+                <div class="intro-info">
+                    <div class="contact-info">
+                        phone number, email
                     </div>
-                    
-                </div>    
+                    <a>Education</a> <br />
+                    <a>Projects</a> <br />
+                    <a>Work</a>
+                </div>
+
             </div>
-            
+        </div>
+
+    </section>
+
+    <main>
+        <section class="info" id="sec-edu">
+            <h2 class="montserrat-regular">Education</h2>
+            <div class="flex-container">
+                <div class="school-container">
+                    <div class="edu-container">
+                        <img width=640 height=320 src="imgs/SFU-block-logo.png" class="school-icon">
+                    </div>
+                    <div class="edu-container">
+                        <h3>Bacholors of Science Computing Science</h3>
+                        <p>SFU</p>
+                        <p>Date</p>
+                        <p>GPA</p>
+                        <p>Extra Stuff</p>
+                    </div>
+
+                </div>
+                <div class="school-container">
+                    <img width=1200 height=1088 class="school-icon" src="imgs/BCIT_logo.png">
+                    <div class="edu-container">
+                        <h3>Computing Systems Technology</h3>
+                        <p>BCIT</p>
+                        <p>Date</p>
+                        <p>GPA</p>
+                        <p>Extra Stuff</p>
+                    </div>
+
+                </div>
         </section>
 
-        <main>
-            <section class="info" id="sec-edu">
-                <h2 class="montserrat-regular">Education</h2>
-                <div class="flex-container">
-                    <div class="school-container">
-                        <div class="edu-container">
-                            <img width=640 height=320 src="imgs/SFU-block-logo.png" class="school-icon">
-                        </div>
-                        <div class="edu-container">
-                            <h3>Bacholors of Science Computing Science</h3>
-                            <p>SFU</p>
-                            <p>Date</p>
-                            <p>GPA</p>
-                            <p>Extra Stuff</p>
-                        </div>
-                    
+        <section class="info" id="sec-proj">
+            <h2>Projects</h2>
+            <div class="flex-container">
+                <div class="project-container">
+                    <div class="flex-item">
+                        <img width=640 height=320 src="imgs/placehold.jpg" class="project-icon">
                     </div>
-                    <div class="school-container">
-                        <img width=1200 height=1088 class="school-icon" src="imgs/BCIT_logo.png">
-                        <div class="edu-container">
-                            <h3>Computing Systems Technology</h3>
-                            <p>BCIT</p>
-                            <p>Date</p>
-                            <p>GPA</p>
-                            <p>Extra Stuff</p>
-                        </div>
-                    
+                    <div class="flex-item">
+                        <h3>AI Game</h3>
+                        <p>Date</p>
+                        <p>Description</p>
                     </div>
-            </section>
+                </div>
+            </div>
+        </section>
 
-            <section class="info" id="sec-proj">
-                <h2>Projects</h2>
-                <div class="flex-container">
-                    <div class="project-container">
-                        <div class="flex-item">
-                            <img width=640 height=320 src="imgs/placehold.jpg" class="project-icon">
-                        </div>
-                        <div class="flex-item">
-                            <h3>AI Game</h3>
-                            <p>Date</p>
-                            <p>Description</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="info" id="sec-workexp">
-                <h2>Work Experience</h2>
-                <div class='project-container'>
-                    <img>
-                    <h3> Project title</h3>
-                    <p>Project description</p>
-                </div>
-            </section>
-    
-            <section class="info" id="sec-hobbies">
-                <h2>Hobbies</h2>
-                <div class='hobbies-container'>
-                    <img>
-                    <h3> Hobbie Title</h3>
-                    <p>Hobby Description</p>
-                </div>
-            </section>
-        </main>
-    
-        <footer>
-            <div>
-                contact info
+        <section class="info" id="sec-workexp">
+            <h2>Work Experience</h2>
+            <div class='project-container'>
+                <img>
+                <h3> Project title</h3>
+                <p>Project description</p>
             </div>
-            <div>
-                Creditation
+        </section>
+
+        <section class="info" id="sec-hobbies">
+            <h2>Hobbies</h2>
+            <div class='hobbies-container'>
+                <img>
+                <h3> Hobbie Title</h3>
+                <p>Hobby Description</p>
             </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            contact info
+        </div>
+        <div>
+            Creditation
+        </div>
+    </footer>
+</body>
 
 </html>
