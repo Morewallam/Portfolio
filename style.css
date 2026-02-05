@@ -12,8 +12,6 @@
     --h2: bold 1rem/1.4em var(-ff);
     --p: 1rem/1.4em var(-ff);
     --p2: .875/1.4em var(-ff);
-
-
 }
 
 .regular-font {
@@ -36,18 +34,19 @@ body {
     font-family: "Source Code Pro", sans-serif;
     color: var(--main-text-color);
     text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    background-color: var(--background-color-main);
 }
 
 #gradient{
     position: fixed;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background: radial-gradient(var(--background-color-main),var(--background-color-secondary));
     z-index: -1;
 }
 
 #scanlines{
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     pointer-events: none;
@@ -87,21 +86,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#content{
+    width: fit-content;
 }
 
 .project{
     display: flex;
-    gap: 5px;
-    margin: 10px;
+    gap: 20px;
+    margin: 25px auto;
+    flex-wrap: wrap-reverse;
+    width: fit-content;
+    justify-content: center;
+}
 
+
+img,.project p{
+    width: 400px;
+    width: min(95vw, 400px);
 }
 
 img {
-    width: max(30vw, 300px);
     height: auto;
     border: 2px solid var(--main-text-color);
 }
 
-p{
-    width: max(30vw, 300px);
+
+#contact-info{
+    display: flex;
+    flex-flow: wrap;
+}
+
+#content{
+    margin: auto;
+}
+
+#intro{
+    width: fit-content;
+    padding: 2.5vw;
 }
