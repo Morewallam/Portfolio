@@ -124,3 +124,8 @@ img {
     width: fit-content;
     padding: 5px 2.5vw;
 }
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit; /* Replace with your chosen color code (e.g., #000000 for black, #0000FF for blue, or the 'inherit' value) */
+  text-decoration: none; /* Optional: removes the underline */
+}
