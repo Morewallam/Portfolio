@@ -1,87 +1,107 @@
 /* Setup the font families */
 :root{
     scroll-behavior: smooth;
+    --background-color-main: #16303C;
+    --background-color-secondary: #0A1F29;
+    --main-text-color: #c1d3d6;
+    --secondary-text-color: gray;
+    --regular-font-size: 16rem;
+
+    --ff: "Source Code Pro", monospace;
+    --h1: bold 1.125rem/1em var(-ff);
+    --h2: bold 1rem/1.4em var(-ff);
+    --p: 1rem/1.4em var(-ff);
+    --p2: .875/1.4em var(-ff);
+
+
 }
 
+.regular-font {
+  font-family: var(--ff);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.medium-font {
+  font-family: var(--ff);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 body {
     padding: 0;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Source Code Pro", sans-serif;
+    color: var(--main-text-color);
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.montserrat-regular {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-.container {
-    position: relative;
-    text-align: center;
-  }
-
-#intro-img {
-    height: 100dvh;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
+#gradient{
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    background: radial-gradient(var(--background-color-main),var(--background-color-secondary));
+    z-index: -1;
 }
 
-.intro-text {
+#scanlines{
+    height: 100vw;
+    width: 100vw;
+    position: fixed;
+    pointer-events: none;
+    z-index: 2;
+}
+#scanlines::before, #scanlines::after{
+    display: block;
+    pointer-events: none;
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-  }
-
-h1 {
-    font-size: clamp(1rem, calc(5vw + 0.25rem),5rem);
-    font-style: bold;
-    color:black; 
 }
 
-.intro-info {
-    background-color: blanchedalmond;
-    padding: 12px;
-    border-radius: 5px;
-    margin-left: 25%;
-    margin-right: 25%;
-
+#scanlines::after{
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -moz-repeating-linear-gradient(
+        top,
+        transparent,
+        transparent 2px, 
+        rgba(6,28,23,.2) 2px,
+        rgba(6,28,23,.2) 4px
+        );
+    background-image: repeating-linear-gradient(
+        top,
+        transparent,
+        transparent 2px, 
+        rgba(6,28,23,.2) 2px,
+        rgba(6,28,23,.2) 4px
+        );
+    background-size: 100% 4px;
 }
 
-.flex-container{
+#main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    align-content: space-around;
 }
 
-.school-container {
+.project{
     display: flex;
-    justify-content: space-around;
-    border-radius: 5px;
-    background-color: beige;
-    border: 2px solid gray;
-    padding: 2%;
-    margin: 24px;
-    height: 30vh;
-    width: 35vw;
+    gap: 5px;
+    margin: 10px;
+
 }
 
-.school-icon {
+img {
+    width: max(30vw, 300px);
     height: auto;
-    width: 10vw;
-    display:inline;
+    border: 2px solid var(--main-text-color);
 }
 
-.edu-container {
-    margin: 2%;
-}
-
-#sec-edu{
-    padding: 5vw;
+p{
+    width: max(30vw, 300px);
 }

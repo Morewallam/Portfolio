@@ -12,111 +12,66 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!-- <header id="pg-head">
-            Want this to be hidden until scroll up
-             then we can link them to each section, could also go to the side
-    
-        </header> -->
+    <div id="gradient"></div>
+    <div id="scanlines"></div>
 
-    <section id="intro">
-        <div class="container">
-            <img id="intro-img" height="1045" width="1567" src="imgs/Kyoto_shrine.jpg">
-            <div class="intro-text">
-                <h1 class="montserrat-regular page-title">
-                    Sean Wallace
-                </h1>
-                <div class="intro-info">
-                    <div class="contact-info">
-                        phone number, email
+    <header>
+
+    </header>
+    <div id="main">
+        <div id="content">
+            <div>
+                <h1>Sean Wallace</h1>
+            </div>
+            <div>
+                <span>(+1)(778)929-5762 </span>
+                <span>swallace987@gmail.com</span>
+                <span>www.linkedin.com/in/seancwallace30</span>
+                <span>https://github.com/Morewallam</span>
+
+            </div>
+            <div id="about-me"></div>
+            <h2>About</h2>
+            <p>Hi this is all about me and who I am as a person and what I like. This is so fun!!! YAY</p>
+            <div id="projects">
+                <div class="project">
+                    <div class="img">
+                        <img src="imgs/EmotionDefender.png" alt="Gamplay of Emotion Defender">
                     </div>
-                    <a>Education</a> <br />
-                    <a>Projects</a> <br />
-                    <a>Work</a>
+                    <div>
+                        <h2>Emotion Defender</h2>
+                        <p>This is a small tower defence game that is played by making difference facial expressions to
+                            defeat enemies. The game is built using Pygame to run all teh graphics and game logic. It
+                            also uses a machine learning model that we trained to identfity the players face and the
+                            expression they are making.</p>
+                    </div>
                 </div>
-
+                <div class="project">
+                    <div class="img">
+                        <img src="imgs/planeImage.jpg">
+                    </div>
+                    <div>
+                        <h2>Plane Segmentation</h2>
+                        <p>This is a plane indentifer and segmentation model, that given an overhead image of an
+                            airport
+                            it can indetify the airplanes in the image, then it can segment each airplane. It was
+                            built
+                            using pytorch with a combination of pre-trained models and customs layers and
+                            connections.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
             </div>
         </div>
 
-    </section>
-
-    <main>
-        <section class="info" id="sec-edu">
-            <h2 class="montserrat-regular">Education</h2>
-            <div class="flex-container">
-                <div class="school-container">
-                    <div class="edu-container">
-                        <img width=640 height=320 src="imgs/SFU-block-logo.png" class="school-icon">
-                    </div>
-                    <div class="edu-container">
-                        <h3>Bacholors of Science Computing Science</h3>
-                        <p>SFU</p>
-                        <p>Date</p>
-                        <p>GPA</p>
-                        <p>Extra Stuff</p>
-                    </div>
-
-                </div>
-                <div class="school-container">
-                    <img width=1200 height=1088 class="school-icon" src="imgs/BCIT_logo.png">
-                    <div class="edu-container">
-                        <h3>Computing Systems Technology</h3>
-                        <p>BCIT</p>
-                        <p>Date</p>
-                        <p>GPA</p>
-                        <p>Extra Stuff</p>
-                    </div>
-
-                </div>
-        </section>
-
-        <section class="info" id="sec-proj">
-            <h2>Projects</h2>
-            <div class="flex-container">
-                <div class="project-container">
-                    <div class="flex-item">
-                        <img width=640 height=320 src="imgs/placehold.jpg" class="project-icon">
-                    </div>
-                    <div class="flex-item">
-                        <h3>AI Game</h3>
-                        <p>Date</p>
-                        <p>Description</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="info" id="sec-workexp">
-            <h2>Work Experience</h2>
-            <div class='project-container'>
-                <img>
-                <h3> Project title</h3>
-                <p>Project description</p>
-            </div>
-        </section>
-
-        <section class="info" id="sec-hobbies">
-            <h2>Hobbies</h2>
-            <div class='hobbies-container'>
-                <img>
-                <h3> Hobbie Title</h3>
-                <p>Hobby Description</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            contact info
-        </div>
-        <div>
-            Creditation
-        </div>
-    </footer>
+    </div>
 </body>
 
 </html>
