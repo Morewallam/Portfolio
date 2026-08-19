@@ -1,0 +1,11 @@
+---
+import { site } from "../data/content";
+---
+
+<section id="contact" class="mx-auto max-w-[1100px] px-6 py-16 text-center">
+  <h2 class="mb-2 text-xl font-medium">Get in touch</h2>
+  <p class="text-neutral-500">Best way to reach me is by email.</p>
+  <a href={`mailto:${site.email}`} class="mt-2 inline-block text-lg underline">
+    {site.email}
+  </a>
+</section>
